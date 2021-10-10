@@ -40,7 +40,7 @@ class Info(commands.Cog):
                           f'\nTotal ram- {round(values24, 2)} GB'
                           f'\nAvailable Ram - {round(val4, 2)} GB')
 
-        await ctx.send(embed=embedve)
+        await ctx.reply(embed=embedve, mention_author=False)
 
 def setup(BOT):
     BOT.add_cog(Info(BOT))
